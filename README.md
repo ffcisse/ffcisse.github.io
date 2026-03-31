@@ -1,6 +1,6 @@
 # Farah Cisse Portfolio
 
-Static portfolio site for Farah Cisse, designed to feel soft, editorial, and professional while showcasing work for data science, ML, and AI internship opportunities.
+Static portfolio site, showcasing work for data science, ML, and AI opportunities.
 
 ## Run locally
 
@@ -14,11 +14,9 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Deploy options
-
 This project deploys easily on:
 
-- GitHub Pages
+- GitHub Pages (Currently deployed here)
 - Netlify
 - Vercel
 
