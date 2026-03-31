@@ -1,0 +1,493 @@
+:root {
+  --bg: #f7f1e8;
+  --bg-soft: #fbf7f1;
+  --panel: rgba(255, 252, 247, 0.88);
+  --panel-strong: #fffaf3;
+  --ink: #1f2b26;
+  --muted: #5f6e66;
+  --sage: #a8b7a1;
+  --sage-deep: #6a7f72;
+  --gold: #b8945c;
+  --rose: #dfc9c0;
+  --line: rgba(63, 79, 68, 0.14);
+  --shadow: 0 24px 80px rgba(83, 71, 52, 0.12);
+  --radius: 28px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Manrope", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(223, 201, 192, 0.5), transparent 24rem),
+    radial-gradient(circle at right 20%, rgba(168, 183, 161, 0.42), transparent 22rem),
+    linear-gradient(180deg, #fcf8f1 0%, var(--bg) 55%, #f4eee4 100%);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-shell {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(252, 248, 241, 0.82);
+  backdrop-filter: blur(14px);
+}
+
+.brand,
+.site-nav a,
+.button,
+.prompt-chip,
+.chat-form button,
+.contact-links a {
+  text-decoration: none;
+}
+
+.brand {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0 4rem;
+}
+
+.eyebrow,
+.section-kicker,
+.project-type,
+.timeline-date,
+.timeline-org {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage-deep);
+  font-size: 0.78rem;
+}
+
+.hero h1,
+.section-heading h2 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  line-height: 0.95;
+}
+
+.hero h1 {
+  font-size: clamp(3.2rem, 7vw, 6.2rem);
+  max-width: 11ch;
+}
+
+.lede,
+.about-card p,
+.timeline-content p,
+.project-card p,
+.skill-card p,
+.education-card p,
+.lead-card p,
+.contact-card p,
+.section-intro {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.lede {
+  max-width: 60ch;
+  font-size: 1.08rem;
+}
+
+.hero-actions,
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.6rem;
+}
+
+.button,
+.chat-form button {
+  border-radius: 999px;
+  padding: 0.9rem 1.25rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.button:hover,
+.prompt-chip:hover,
+.chat-form button:hover {
+  transform: translateY(-1px);
+}
+
+.button.primary,
+.chat-form button {
+  background: var(--ink);
+  color: #fffaf2;
+}
+
+.button.secondary {
+  background: transparent;
+  border-color: var(--line);
+}
+
+.hero-highlights {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0;
+  margin: 1.7rem 0 0;
+  list-style: none;
+  color: var(--ink);
+}
+
+.hero-highlights li::before {
+  content: "•";
+  color: var(--gold);
+  margin-right: 0.5rem;
+}
+
+.hero-portrait-wrap {
+  position: relative;
+  min-height: 540px;
+}
+
+.portrait-card {
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 36px;
+  background: linear-gradient(180deg, rgba(255, 250, 243, 0.95), rgba(255, 255, 255, 0.72));
+  box-shadow: var(--shadow);
+}
+
+.hero-portrait {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 28px;
+}
+
+.floating-note {
+  position: absolute;
+  max-width: 12rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(184, 148, 92, 0.24);
+  border-radius: 20px;
+  background: rgba(255, 250, 243, 0.9);
+  box-shadow: 0 14px 32px rgba(80, 62, 36, 0.08);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.note-one {
+  left: -1rem;
+  bottom: 4.4rem;
+}
+
+.note-two {
+  right: -0.5rem;
+  top: 2rem;
+}
+
+.section {
+  padding: 1.2rem 0 2rem;
+}
+
+.section-heading {
+  margin-bottom: 1.6rem;
+}
+
+.section-heading h2 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  max-width: 12ch;
+}
+
+.about-grid,
+.skills-grid,
+.leadership-grid {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.about-grid {
+  grid-template-columns: 1.3fr 0.7fr;
+}
+
+.about-card,
+.values-card,
+.project-card,
+.skill-card,
+.education-card,
+.lead-card,
+.contact-card,
+.chatbot-shell,
+.timeline-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.about-card,
+.values-card,
+.project-card,
+.skill-card,
+.education-card,
+.lead-card,
+.contact-card,
+.chatbot-shell {
+  padding: 1.4rem;
+}
+
+.values-card h3,
+.project-card h3,
+.skill-card h3,
+.education-card h3,
+.lead-card h3 {
+  margin-top: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.9rem;
+}
+
+.values-card ul,
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  padding: 0;
+  list-style: none;
+}
+
+.values-card li,
+.tag-list li,
+.hobby-row span,
+.prompt-chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.values-card li,
+.tag-list li,
+.hobby-row span {
+  padding: 0.7rem 0.95rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 0.32fr 1fr;
+  gap: 1.3rem;
+  padding: 1.4rem;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.project-card.featured {
+  background: linear-gradient(180deg, rgba(255, 250, 243, 0.98), rgba(244, 239, 229, 0.92));
+}
+
+.project-card a {
+  color: var(--sage-deep);
+  font-weight: 700;
+}
+
+.skills-grid,
+.leadership-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hobby-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.chat-window {
+  display: grid;
+  gap: 0.85rem;
+  max-height: 420px;
+  overflow-y: auto;
+  padding: 0.25rem 0.1rem 0.5rem;
+}
+
+.message {
+  width: fit-content;
+  max-width: min(90%, 42rem);
+  padding: 0.95rem 1rem;
+  border-radius: 22px;
+  line-height: 1.6;
+}
+
+.message.user {
+  justify-self: end;
+  background: var(--ink);
+  color: #fffaf2;
+}
+
+.message.bot {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--line);
+}
+
+.chat-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.chat-form input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.95rem 1rem;
+  font: inherit;
+  background: #fffdf8;
+}
+
+.prompt-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.prompt-chip {
+  padding: 0.7rem 0.9rem;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+}
+
+.contact-card {
+  background: linear-gradient(180deg, rgba(255, 250, 243, 0.96), rgba(255, 255, 255, 0.72));
+}
+
+.contact-links a {
+  color: var(--sage-deep);
+  font-weight: 700;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 960px) {
+  .hero,
+  .about-grid,
+  .timeline-item,
+  .project-grid,
+  .skills-grid,
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    border-radius: 28px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+  }
+
+  .hero-portrait-wrap {
+    min-height: auto;
+  }
+
+  .hero-portrait {
+    min-height: 360px;
+  }
+
+  .floating-note {
+    position: static;
+    margin-top: 0.9rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(100% - 1rem, 1180px);
+  }
+
+  .hero {
+    padding-top: 0.5rem;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+  }
+
+  .chat-form {
+    grid-template-columns: 1fr;
+  }
+}
