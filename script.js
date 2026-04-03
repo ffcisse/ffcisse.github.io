@@ -18,8 +18,10 @@ const knowledgeBase = [
       "coursework",
       "classes",
     ],
-    answer:
+    answers: [
       "Farah studies Data Science and Bioengineering at UC Berkeley and is expected to graduate in December 2026. Her coursework includes machine learning, data science, data analytics, probability and statistics, computational molecular and cell biology, computational functional genomics, and data structures and algorithms.",
+      "She's a Data Science and Bioengineering student at UC Berkeley, graduating in December 2026. A lot of her coursework sits right at the intersection of machine learning, biology, and data-driven problem solving.",
+    ],
   },
   {
     id: "background",
@@ -32,8 +34,10 @@ const knowledgeBase = [
       "story",
       "introduction",
     ],
-    answer:
-      "Farah is a UC Berkeley student in Data Science and Bioengineering who enjoys taking messy, unclear problems and building tools people can actually use. She cares about real scientific impact, interpretable and transparent systems, and making technical spaces more inclusive for underrepresented communities.",
+    answers: [
+      "Farah is a UC Berkeley student in Data Science and Bioengineering who really enjoys taking messy, unclear problems and turning them into something useful. She's especially drawn to work that has real scientific impact and stays interpretable.",
+      "A good way to describe Farah is that she's a builder with a research mindset. She likes working on hard problems in data, biology, and decision-making, but she also cares a lot about making the work understandable and meaningful.",
+    ],
   },
   {
     id: "experience",
@@ -51,8 +55,10 @@ const knowledgeBase = [
       "labs",
       "resume",
     ],
-    answer:
-      "Farah's recent experience includes being a Data Intern at Marine Biologics, a Computational Biology Researcher in the Staller Lab at UC Berkeley, a Bioinformatics Researcher at Lawrence Berkeley National Laboratory, and a Biomechanics Researcher at the CARE Lab at San Francisco State.",
+    answers: [
+      "Farah's experience includes being a Data Intern at Marine Biologics, a Computational Biology Researcher in the Staller Lab at UC Berkeley, a Bioinformatics Researcher at Lawrence Berkeley National Laboratory, and a Biomechanics Researcher at the CARE Lab.",
+      "Most of Farah's experience sits between research and applied data work. She's worked in biotech, computational biology, bioinformatics, and biomechanics, so her background is both technical and pretty interdisciplinary.",
+    ],
   },
   {
     id: "marine-biologics",
@@ -70,8 +76,10 @@ const knowledgeBase = [
       "document",
       "documents",
     ],
-    answer:
-      "At Marine Biologics, Farah built a data ingestion workflow that converted tables and methods in scientific PDFs into structured CSV data using open-source tooling, automation, and LLM-assisted extraction for downstream machine learning work. She also launched a web app version of the pipeline for easier PDF upload and real-time visualization.",
+    answers: [
+      "At Marine Biologics, Farah built a workflow that pulled structured data out of scientific PDFs and turned it into CSVs for downstream machine learning use. She also built a web app version so people could upload PDFs and explore the results more easily.",
+      "That Marine Biologics project is a strong example of the kind of work Farah likes: taking something messy and manual, automating it, and turning it into a tool people can actually use.",
+    ],
   },
   {
     id: "skills",
@@ -95,8 +103,10 @@ const knowledgeBase = [
       "scikit",
       "scikit-learn",
     ],
-    answer:
-      "Farah works with Python, SQL, Java, R, MATLAB, Bash, Scikit-learn, statsmodels, Streamlit, Supabase, GitHub, Jupyter Notebook, VS Code, IntelliJ, RStudio, and bioinformatics tools like BLAST, FoldSeek, Cytoscape, AlphaFold, JBrowse, and Chimera.",
+    answers: [
+      "Farah works with Python, SQL, Java, R, MATLAB, Bash, Scikit-learn, statsmodels, Streamlit, Supabase, GitHub, Jupyter Notebook, VS Code, IntelliJ, and RStudio. She also has experience with bioinformatics tools like BLAST, FoldSeek, Cytoscape, AlphaFold, JBrowse, and Chimera.",
+      "Her skill set blends data science, machine learning, research computing, and bioinformatics, so she can move pretty comfortably between coding, analysis, and scientific context.",
+    ],
   },
   {
     id: "interests",
@@ -114,8 +124,10 @@ const knowledgeBase = [
       "passionate",
       "care about",
     ],
-    answer:
-      "Farah is especially interested in building interpretable and transparent AI or ML-integrated pipelines, especially for healthcare, biotechnology, biological research, and environmental sustainability. She also cares deeply about mentorship and supporting underrepresented communities in STEM.",
+    answers: [
+      "Farah is especially interested in interpretable AI and ML pipelines, especially in healthcare, biotechnology, biological research, and environmental sustainability.",
+      "A big thread through Farah's interests is wanting to build systems that are useful, transparent, and grounded in real impact. She's especially drawn to biotech, healthcare, sustainability, and scientific tooling.",
+    ],
   },
   {
     id: "ml-projects",
@@ -132,8 +144,10 @@ const knowledgeBase = [
       "data science project",
       "portfolio project",
     ],
-    answer:
-      "The strongest projects for AI, ML, and data science roles are Farah's Lung scRNA-seq Clustering project, her Powerlifting ML Pipeline, and her Photosynthesis Gene Function Discovery project. Each one highlights a different strength: machine learning analysis, pipeline building, and scientific data interpretation.",
+    answers: [
+      "The strongest projects for AI, ML, and data science roles are probably Farah's Lung scRNA-seq Clustering project, her Powerlifting ML Pipeline, and her Photosynthesis Gene Function Discovery work.",
+      "If you're looking at her portfolio through an ML lens, the lung scRNA-seq project is probably the clearest machine learning example, while the powerlifting project shows pipeline thinking and the LBNL project shows strong scientific data analysis.",
+    ],
   },
   {
     id: "powerlifting",
@@ -145,8 +159,10 @@ const knowledgeBase = [
       "max",
       "performance tracking",
     ],
-    answer:
-      "Farah's Powerlifting ML Pipeline is a current project focused on using user-inputted and online powerlifting data to build a machine learning pipeline that helps support training decisions like when to deload, when to test a max, and how to adjust a program. The long-term goal is to turn the backend pipeline into an app for athletes.",
+    answers: [
+      "Farah's Powerlifting ML Pipeline is a current project focused on using user-inputted and online powerlifting data to help support training decisions like when to deload, when to test a max, and what to adjust in a training program.",
+      "It's a fun project, but also a serious pipeline and modeling problem. The long-term idea is to turn it into an app that helps lifters while also improving the model as more training data comes in.",
+    ],
   },
   {
     id: "scrna-project",
@@ -163,8 +179,10 @@ const knowledgeBase = [
       "cell populations",
       "unsupervised",
     ],
-    answer:
-      "Farah's Lung scRNA-seq Clustering project used PCA, K-means clustering, differential expression analysis, and biological validation to identify meaningful cell populations in a lung single-cell RNA sequencing dataset. It is one of her clearest machine learning-focused projects.",
+    answers: [
+      "Farah's Lung scRNA-seq Clustering project used PCA, K-means clustering, differential expression analysis, and biological validation to identify meaningful cell populations in a lung single-cell RNA sequencing dataset.",
+      "It's one of her strongest machine learning-related projects because it shows not just modeling, but also biological interpretation and validation.",
+    ],
   },
   {
     id: "bioinformatics-project",
@@ -181,8 +199,10 @@ const knowledgeBase = [
       "protein",
       "proteins",
     ],
-    answer:
-      "In the Photosynthesis Gene Function Discovery project, Farah integrated graph network analysis, structural similarity, and protein annotation workflows to investigate unknown gene functions in Chlamydomonas reinhardtii. It highlights her bioinformatics, Bash, HPC, FoldSeek, BLAST, Cytoscape, and Chimera experience.",
+    answers: [
+      "In the Photosynthesis Gene Function Discovery project, Farah combined graph network analysis, structural similarity, and protein annotation workflows to investigate unknown gene functions in Chlamydomonas reinhardtii.",
+      "That project is a really good example of her bioinformatics side. It pulls together tools like FoldSeek, BLAST, Cytoscape, Chimera, Bash, and HPC-based workflows.",
+    ],
   },
   {
     id: "ethical-ai",
@@ -199,8 +219,10 @@ const knowledgeBase = [
       "trust",
       "responsible ai",
     ],
-    answer:
-      "A big theme in Farah's work is transparency. She is especially interested in interpretable pipelines that help people understand how decisions are being made, particularly in high-stakes areas like healthcare, biotech, and scientific analysis.",
+    answers: [
+      "A big theme in Farah's work is transparency. She's especially interested in systems that help people make important decisions without turning the process into a black box.",
+      "For Farah, ethical AI is less about buzzwords and more about building tools that people can actually trust, especially in areas like healthcare, biotech, and research.",
+    ],
   },
   {
     id: "leadership",
@@ -216,8 +238,10 @@ const knowledgeBase = [
       "women engineers",
       "honors society",
     ],
-    answer:
-      "Farah has served as an Executive Officer in the UC Berkeley Calisthenics Club, a Data Science Tutor at UC Berkeley, a leader in the Bioengineering Honors Society, and an outreach leader in the Society of Women Engineers. Mentorship and community-building are an important part of her story.",
+    answers: [
+      "Farah has been an Executive Officer in the UC Berkeley Calisthenics Club, a Data Science Tutor at UC Berkeley, and a leader in both the Bioengineering Honors Society and the Society of Women Engineers.",
+      "Mentorship and community-building are a real part of her story. She cares a lot about helping other students, especially those from underrepresented backgrounds, feel supported in technical spaces.",
+    ],
   },
   {
     id: "hobbies",
@@ -232,8 +256,10 @@ const knowledgeBase = [
       "calisthenics",
       "plants",
     ],
-    answer:
+    answers: [
       "Outside of technical work, Farah enjoys calisthenics, reading, mentorship, volleyball, and caring for plants.",
+      "She definitely has a strong life outside of tech too. Calisthenics is a big one, and she also really enjoys reading, mentoring, volleyball, and taking care of plants.",
+    ],
   },
   {
     id: "contact",
@@ -249,8 +275,10 @@ const knowledgeBase = [
       "resume",
       "cv",
     ],
-    answer:
-      "You can reach Farah at ffcisse@berkeley.edu, connect on LinkedIn at linkedin.com/in/farah-cisse, view her GitHub at github.com/ffcisse, or open her resume from the Resume button on the page.",
+    answers: [
+      "You can reach Farah at ffcisse@berkeley.edu, connect on LinkedIn at linkedin.com/in/farah-cisse, or check out her GitHub at github.com/ffcisse.",
+      "The easiest way to reach Farah is probably by email at ffcisse@berkeley.edu. Her LinkedIn and GitHub are also linked on the site.",
+    ],
   },
 ];
 
@@ -283,6 +311,17 @@ const stopWords = new Set([
   "about",
 ]);
 
+const followUpWords = new Set([
+  "more",
+  "that",
+  "this",
+  "it",
+  "why",
+  "how",
+  "which",
+  "one",
+]);
+
 const chatWindow = document.getElementById("chat-window");
 const chatForm = document.getElementById("chat-form");
 const chatInput = document.getElementById("chat-input");
@@ -312,25 +351,29 @@ function tokenize(text) {
     .filter((token) => token && !stopWords.has(token));
 }
 
-function scoreEntry(entry, normalizedQuestion, tokens) {
+function isFollowUp(tokens) {
+  return tokens.some((token) => followUpWords.has(token));
+}
+
+function scoreEntry(entry, normalizedQuestion, tokens, followUp) {
   let score = 0;
 
   entry.keywords.forEach((keyword) => {
     const normalizedKeyword = normalizeText(keyword);
-    const keywordParts = normalizedKeyword.split(" ");
+    const parts = normalizedKeyword.split(" ");
 
     if (normalizedQuestion.includes(normalizedKeyword)) {
-      score += keywordParts.length > 1 ? 5 : 3;
+      score += parts.length > 1 ? 5 : 3;
     }
 
-    const overlap = keywordParts.filter((part) => tokens.includes(part)).length;
+    const overlap = parts.filter((part) => tokens.includes(part)).length;
     if (overlap > 0) {
       score += overlap * 2;
     }
   });
 
-  if (lastMatchedTopics.includes(entry.id)) {
-    score += 1;
+  if (followUp && lastMatchedTopics.includes(entry.id)) {
+    score += 3;
   }
 
   return score;
@@ -339,35 +382,50 @@ function scoreEntry(entry, normalizedQuestion, tokens) {
 function getTopMatches(question) {
   const normalizedQuestion = normalizeText(question);
   const tokens = tokenize(question);
+  const followUp = isFollowUp(tokens);
 
   return knowledgeBase
     .map((entry) => ({
       entry,
-      score: scoreEntry(entry, normalizedQuestion, tokens),
+      score: scoreEntry(entry, normalizedQuestion, tokens, followUp),
     }))
     .filter((item) => item.score > 0)
     .sort((a, b) => b.score - a.score);
 }
 
-function buildResponse(matches) {
+function pickAnswer(entry, question) {
+  const normalizedQuestion = normalizeText(question);
+
+  if (entry.id === "contact" && normalizedQuestion.includes("resume")) {
+    return "You can open Farah's resume directly from the Resume button on the page, and if you want to reach out, her email is ffcisse@berkeley.edu.";
+  }
+
+  if (entry.id === "ml-projects" && normalizedQuestion.includes("best")) {
+    return "If I had to pick just one, I'd probably point to the Lung scRNA-seq project first for machine learning, then the Powerlifting ML Pipeline for end-to-end pipeline thinking.";
+  }
+
+  return entry.answers[0];
+}
+
+function buildResponse(matches, question) {
   if (!matches.length) {
-    return "I can help with questions about Farah's background, experience, projects, technical skills, leadership, interests, and contact details. Try asking something like 'What experience does Farah have?', 'Which project best shows ML skills?', or 'How can I contact Farah?'";
+    return "I can help with questions about Farah's background, experience, projects, technical skills, leadership, interests, and contact details. Try asking something like 'What kind of work is she interested in?' or 'Which project best shows ML skills?'";
   }
 
   const best = matches[0];
   const second = matches[1];
 
   if (!second || second.score < best.score - 2) {
-    return best.entry.answer;
+    return pickAnswer(best.entry, question);
   }
 
-  return `${best.entry.answer} ${second.entry.answer}`;
+  return `${pickAnswer(best.entry, question)} ${second.entry.answers[1] || second.entry.answers[0]}`;
 }
 
 function getBotResponse(question) {
   const matches = getTopMatches(question);
   lastMatchedTopics = matches.slice(0, 2).map((item) => item.entry.id);
-  return buildResponse(matches);
+  return buildResponse(matches, question);
 }
 
 function handleQuestion(question) {
@@ -379,7 +437,7 @@ function handleQuestion(question) {
 
   window.setTimeout(() => {
     addMessage(getBotResponse(question), "bot");
-  }, 250);
+  }, 220);
 }
 
 if (chatForm && chatInput && chatWindow) {
