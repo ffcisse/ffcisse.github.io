@@ -114,12 +114,13 @@ img {
   margin: 0;
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
-  line-height: 0.95;
 }
 
 .hero h1 {
-  font-size: clamp(3.2rem, 7vw, 6.2rem);
-  max-width: 11ch;
+  font-size: clamp(3rem, 6.5vw, 5.6rem);
+  max-width: 13ch;
+  line-height: 1;
+  text-wrap: balance;
 }
 
 .lede,
@@ -214,7 +215,7 @@ img {
 
 .floating-note {
   position: absolute;
-  max-width: 12rem;
+  max-width: 15rem;
   padding: 0.9rem 1rem;
   border: 1px solid rgba(184, 148, 92, 0.24);
   border-radius: 20px;
@@ -222,6 +223,8 @@ img {
   box-shadow: 0 14px 32px rgba(80, 62, 36, 0.08);
   color: var(--muted);
   font-size: 0.88rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .note-one {
@@ -243,8 +246,10 @@ img {
 }
 
 .section-heading h2 {
-  font-size: clamp(2.4rem, 4vw, 4rem);
-  max-width: 12ch;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  max-width: 18ch;
+  line-height: 1.02;
+  text-wrap: balance;
 }
 
 .about-grid,
@@ -284,6 +289,18 @@ img {
   padding: 1.4rem;
 }
 
+.about-card,
+.values-card,
+.project-card,
+.skill-card,
+.education-card,
+.lead-card,
+.contact-card,
+.timeline-meta,
+.timeline-content {
+  min-width: 0;
+}
+
 .values-card h3,
 .project-card h3,
 .skill-card h3,
@@ -292,6 +309,7 @@ img {
   margin-top: 0;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.9rem;
+  overflow-wrap: anywhere;
 }
 
 .values-card ul,
@@ -325,9 +343,20 @@ img {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 0.32fr 1fr;
+  grid-template-columns: minmax(150px, 220px) minmax(0, 1fr);
   gap: 1.3rem;
   padding: 1.4rem;
+  align-items: start;
+}
+
+.timeline-date,
+.timeline-org,
+.contact-links a {
+  overflow-wrap: anywhere;
+}
+
+.timeline-org {
+  line-height: 1.45;
 }
 
 .timeline-content h3 {
@@ -340,20 +369,50 @@ img {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.2rem;
+  align-items: start;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-card p,
+.skill-card p,
+.lead-card p,
+.education-card p,
+.contact-card p,
+.about-card p,
+.timeline-content p {
+  margin: 0;
 }
 
 .project-card.featured {
   background: linear-gradient(180deg, rgba(255, 250, 243, 0.98), rgba(244, 239, 229, 0.92));
 }
 
+.project-card .tag-list,
+.values-card ul {
+  margin: 0.35rem 0 0;
+}
+
 .project-card a {
   color: var(--sage-deep);
   font-weight: 700;
+  margin-top: auto;
 }
 
 .skills-grid,
 .leadership-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lead-card span {
+  display: block;
+  color: var(--muted);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .hobby-row {
@@ -471,6 +530,12 @@ img {
   .floating-note {
     position: static;
     margin-top: 0.9rem;
+    max-width: 100%;
+  }
+
+  .section-heading h2,
+  .hero h1 {
+    max-width: 100%;
   }
 }
 
@@ -491,3 +556,4 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
